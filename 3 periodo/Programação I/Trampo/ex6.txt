@@ -1,0 +1,12 @@
+- Trata-se de um sistema bancário
+- Possui 3 gerenciadores principais:
+	- Gerenciamento de transações
+		- O cliente pode sacar e transferir valores
+		- Possui métodos para verificação de transações em execução e transações em espera (esperando próximo dia útil)
+	- Gerenciamento de clientes
+		- Controle completo do cadastro de clientes
+		- Associação (agregação) de clientes com contas poupança ou conta corrente
+	- Gerenciamento de contas
+		- Controle (adesão e exclusão) de contas poupanças e contas correntes
+		- Possui métodos de verificação de saldo
+- Possui um calendário que verifica os dias úteis
