@@ -22,6 +22,8 @@ public class Controlador implements ActionListener {
 	private Ex1 ex1;
 	private Ex2 ex2;
 	private Ex3 ex3;
+	private Ex4 ex4;
+	private Ex5 ex5;
 	private Ex6 ex6;
 	
 	public Controlador(JComboBox<String> menu){
@@ -52,6 +54,12 @@ public class Controlador implements ActionListener {
 				break;
 			case 3:
 				ex3 = new Ex3(painel, janela);
+				break;
+			case 4:
+				ex4 = new Ex4(painel, janela);
+				break;
+			case 5:
+				ex5 = new Ex5(painel, janela);
 				break;
 			case 6:
 				ex6 = new Ex6(painel, janela);
