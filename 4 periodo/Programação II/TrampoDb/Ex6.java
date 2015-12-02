@@ -21,6 +21,8 @@ public class Ex6 {
 		painel.setBackground(Color.WHITE);
 		painel.removeAll();
 		painel.updateUI();
+		
+		//janela.setTitle("");
 		//janela.setSize(400, 130);
 	}
 }

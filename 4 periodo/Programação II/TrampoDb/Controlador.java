@@ -21,34 +21,35 @@ public class Controlador implements ActionListener {
 	
 	// Exercícios
 	private Ex1 ex1;
+	private Ex2 ex2;
 	private Ex6 ex6;
 	
-	public Controlador(JComboBox<String> menu, JPanel painel, JFrame janela){
+	public Controlador(JComboBox<String> menu){
 		this.menu = menu;
-		this.painel = painel;
-		this.janela = janela;
 		
-		menu.addActionListener(this);
+		painel = new JPanel(new BorderLayout());
+		painel.setBackground(Color.WHITE);
 		
-		painel.setLayout(new BorderLayout());
-		painel.add(menu, BorderLayout.CENTER);
-		painel.setBackground(Color.GREEN);
-		
+		janela = new JFrame();
 		janela.add(painel);
-		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setSize(500, 500);
-		janela.setVisible(true);
+		janela.setLocation(100, 200);
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		exercicio = menu.getSelectedIndex();
 		nomeExercicio = menu.getSelectedItem().toString();
-		janela.setTitle(nomeExercicio);
+		
+		janela.setVisible(true);
+		janela.setAlwaysOnTop(true);
 		
 		switch(exercicio){
 			case 1:
 				ex1 = new Ex1(painel, janela);
+				break;
+			case 2:
+				ex2 = new Ex2(painel, janela);
 				break;
 			case 6:
 				ex6 = new Ex6(painel, janela);

@@ -67,6 +67,8 @@ public class Ex1 {
 		painel.add(centro, BorderLayout.CENTER);
 		painel.add(direita, BorderLayout.EAST);
 		painel.updateUI();
+		
+		janela.setTitle("Align");
 		janela.setSize(400, 130);
 	}
 }

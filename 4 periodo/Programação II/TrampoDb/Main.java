@@ -2,7 +2,9 @@ package TrampoDb;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.GridLayout;
 import java.awt.LayoutManager;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -24,9 +26,23 @@ public class Main {
 			"Ex. 11.18"
 		};
 		
-		JFrame janela = new JFrame();
 		JPanel painel = new JPanel(new BorderLayout());
 		JComboBox<String> menu = new JComboBox(opcoes);
-		Controlador controlador = new Controlador(menu, painel, janela);
+		Controlador controlador = new Controlador(menu);
+		
+		JButton btn = new JButton("Abrir exercício");
+		btn.addActionListener(controlador);
+		
+		painel.setLayout(new GridLayout(2, 1));
+		painel.add(menu);
+		painel.add(btn);
+		painel.setBackground(Color.WHITE);
+		
+		JFrame janela = new JFrame();
+		janela.add(painel);
+		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		janela.setSize(300, 150);
+		janela.setLocation(600, 200);
+		janela.setVisible(true);
 	}
 }
