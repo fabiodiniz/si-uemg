@@ -1,7 +1,6 @@
 package TrampoDb;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JComboBox;
@@ -22,13 +21,13 @@ public class Controlador implements ActionListener {
 	// Exercícios
 	private Ex1 ex1;
 	private Ex2 ex2;
+	private Ex3 ex3;
 	private Ex6 ex6;
 	
 	public Controlador(JComboBox<String> menu){
 		this.menu = menu;
 		
 		painel = new JPanel(new BorderLayout());
-		painel.setBackground(Color.WHITE);
 		
 		janela = new JFrame();
 		janela.add(painel);
@@ -50,6 +49,9 @@ public class Controlador implements ActionListener {
 				break;
 			case 2:
 				ex2 = new Ex2(painel, janela);
+				break;
+			case 3:
+				ex3 = new Ex3(painel, janela);
 				break;
 			case 6:
 				ex6 = new Ex6(painel, janela);

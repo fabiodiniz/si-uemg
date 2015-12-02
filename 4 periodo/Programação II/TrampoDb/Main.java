@@ -1,9 +1,7 @@
 package TrampoDb;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.GridLayout;
-import java.awt.LayoutManager;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -36,7 +34,6 @@ public class Main {
 		painel.setLayout(new GridLayout(2, 1));
 		painel.add(menu);
 		painel.add(btn);
-		painel.setBackground(Color.WHITE);
 		
 		JFrame janela = new JFrame();
 		janela.add(painel);

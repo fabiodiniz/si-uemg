@@ -1,11 +1,9 @@
 package TrampoDb;
 
-import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JTextField;
 
 /**
@@ -45,7 +43,6 @@ public class Ex2 {
 		}
 		
 		painel.setLayout(new GridLayout(2, 1));
-		painel.setBackground(Color.WHITE);
 		painel.removeAll();
 		painel.add(textfield);
 		painel.add(botoes);

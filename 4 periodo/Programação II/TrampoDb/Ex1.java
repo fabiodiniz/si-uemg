@@ -1,7 +1,6 @@
 package TrampoDb;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JCheckBox;
@@ -34,7 +33,6 @@ public class Ex1 {
 		checkbox2 = new JCheckBox("Show Grid");
 		
 		esquerda = new JPanel(new GridLayout(2, 1));
-		esquerda.setBackground(Color.WHITE);
 		esquerda.add(checkbox1);
 		esquerda.add(checkbox2);
 		
@@ -44,7 +42,6 @@ public class Ex1 {
 		label2 = new JLabel("Y:");
 		
 		centro = new JPanel(new GridLayout(2, 2));
-		centro.setBackground(Color.WHITE);
 		centro.add(label1);
 		centro.add(textfield1);
 		centro.add(label2);
@@ -55,13 +52,11 @@ public class Ex1 {
 		btn3 = new JButton("Help");
 		
 		direita = new JPanel(new GridLayout(3, 1));
-		direita.setBackground(Color.WHITE);
 		direita.add(btn1);
 		direita.add(btn2);
 		direita.add(btn3);
 		
 		painel.setLayout(new BorderLayout(50, 50));
-		painel.setBackground(Color.WHITE);
 		painel.removeAll();
 		painel.add(esquerda, BorderLayout.WEST);
 		painel.add(centro, BorderLayout.CENTER);
