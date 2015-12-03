@@ -1,25 +1,14 @@
 package TrampoDb;
 
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.GridLayout;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.AbstractButton;
-import javax.swing.Box;
-import javax.swing.BoxLayout;
-import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
-import javax.swing.JCheckBox;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JRadioButton;
 import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
 
 /**
  *
@@ -48,7 +37,7 @@ public class Ex5 {
 		painel.setBackground(Color.WHITE);
 		painel.updateUI();
 
-		janela.setTitle("");
+		janela.setTitle("Advinhe o número");
 		janela.setSize(450, 150);
 	}
 }
@@ -73,13 +62,12 @@ class Listener implements ActionListener {
 	}
 	
 	private void randomNumber(){
-		numero = (int) (Math.random() * 1000);
+		numero = 1 + (int) (Math.random() * 1000);
 		System.out.println(numero);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println(numero);
 		tentativa = Integer.parseInt(input.getText());
 		if(concluido){
 			randomNumber();

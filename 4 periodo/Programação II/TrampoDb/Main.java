@@ -39,7 +39,7 @@ public class Main {
 		janela.add(painel);
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setSize(300, 150);
-		janela.setLocation(600, 200);
+		janela.setLocation(600, 100);
 		janela.setVisible(true);
 	}
 }

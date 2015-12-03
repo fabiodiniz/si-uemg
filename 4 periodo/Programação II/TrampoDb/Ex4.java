@@ -26,7 +26,7 @@ public class Ex4 {
 	private Box box1, box2, box5, box6, box7;
 	private JComboBox combo;
 
-	String names[]={"High","Low"};
+	String names[] = {"High", "Low"};
    
 	public Ex4(JPanel painel, JFrame janela){
 		painel.setLayout(new BoxLayout(painel, BoxLayout.X_AXIS));
