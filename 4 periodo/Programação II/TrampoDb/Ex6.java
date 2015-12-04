@@ -73,7 +73,6 @@ public class Ex6 {
 		colorCombo.addItemListener(
 			new ItemListener() {
 				public void itemStateChanged( ItemEvent e ) {
-					// determina se a caixa est� marcada ou n�o
 					if ( e.getStateChange() == ItemEvent.SELECTED )
 						drawPanel.setCurrentColor( 
 							colorArray[ colorCombo.getSelectedIndex() ] );
