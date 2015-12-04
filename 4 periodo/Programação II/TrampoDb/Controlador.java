@@ -66,15 +66,13 @@ public class Controlador implements ActionListener {
 				ex5 = new Ex5(painel, janela);
 				break;
 			case 6:
-		{
-			try {
-				ex6 = new Ex6(painel, janela);
-			} catch (IOException ex) {
-				Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
-			} catch (URISyntaxException ex) {
-				Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
-			}
-		}
+				try {
+					ex6 = new Ex6(painel, janela);
+				} catch (IOException ex) {
+					Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+				} catch (URISyntaxException ex) {
+					Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+				}
 				break;
 		}
 	}
