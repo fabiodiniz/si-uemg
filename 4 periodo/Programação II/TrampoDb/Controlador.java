@@ -3,6 +3,10 @@ package TrampoDb;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -34,7 +38,7 @@ public class Controlador implements ActionListener {
 		janela = new JFrame();
 		janela.add(painel);
 		janela.setSize(500, 500);
-		janela.setLocation(100, 200);
+		janela.setLocation(100, 100);
 	}
 	
 	@Override
@@ -62,7 +66,15 @@ public class Controlador implements ActionListener {
 				ex5 = new Ex5(painel, janela);
 				break;
 			case 6:
+		{
+			try {
 				ex6 = new Ex6(painel, janela);
+			} catch (IOException ex) {
+				Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+			} catch (URISyntaxException ex) {
+				Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+			}
+		}
 				break;
 		}
 	}
